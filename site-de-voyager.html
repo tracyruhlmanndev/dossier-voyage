@@ -4,34 +4,45 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="stylesheet" href="./dossier-voyage/assets/css/style.css">
+            <link rel="icon" type="image/x-icon" href="./dossier-voyage/assets/img/voyage.png">
             <script src="https://kit.fontawesome.com/29575ebf26.js" crossorigin="anonymous"></script>
             <title> Cap sur le monde </title>
       </head>
       <body>
             <!--section acceuil -->
             <section id="container">
+                  
             <header>
                   <div class="logo">
                         <p>Cap sur le Monde</p>
+                        
                   </div>
                   <ul class="menu">
-                        <li><a href="#">acceuil</a></li>
-                        <li><a href="#a-propos">à propos</a></li>
-                        <li><a href="#gallerie">destinations</a></li>
-                        <li><a href="#contact">contact</a></li>
+                        <ul>
+                              <li><a href="http://127.0.0.1:5500/site-de-voyager.html#">Home</a></li>
+                              <li><a href="#a-propos">À propos</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                        <li class="deroulant"><a href="#gallerie">Destinations &ensp;</a>
+                              <ul class="sous">
+                                    <li><a href="http://127.0.0.1:5500/la-chine.html">Chine</a></li>
+                                    <li><a href="http://127.0.0.1:5500/italie.html">Italie</a></li>
+                                    <li><a href="http://127.0.0.1:5500/paris.html">Paris</a></li>
+                                    <li><a href="http://127.0.0.1:5500/coree-du-sud.html">Corée du Sud</a></li>
+                              </ul>
+                        </li>
                   </ul> 
             </header>
             <div class="container-text">
                   <h1>Voyager , Une passion</h1>
                   <p>Rester c'est exister, mais voyager c'est vivre</p>
-                  <a href="#">Réserver un vol</a>
+                  <a href="https://www.booking.com/index.fr.html?aid=2311236;label=fr-fr-booking-desktop-DCpBIW3k2*WIo8XuzMdB9AS652796013276:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-65526620:lp9110705:li:dec:dm;ws=&gclid=Cj0KCQiA57G5BhDUARIsACgCYnzbH4NM9XijhKUZ4E3rJ5EMdGDMW162RLS2INlhiBrBcP9Q1E6rahIaAh-QEALw_wcB">Réserver un vol</a>
             </div>
             </section>
 
             <!-- section a propos -->
             <section id="a-propos">
                   <div>
-                        <p class="tittle-section">à propos</p>
+                        <p class="tittle-section">À propos</p>
                         <h1 class="sub-tittle-section">Qui sommes Nous</h1>
                         <div class="description-photo">
                               <div class="desc">
@@ -53,7 +64,7 @@
                                           </div>  
                                     </div>
                               </div>
-                              <img src="/dossier-voyage/assets/img/image-descr.jpg" alt="">
+                              <img src="./dossier-voyage/assets/img/image-descr.jpg" alt="">
                         </div>
                   </div>
             </section>
@@ -66,20 +77,21 @@
                   <div class="liste-photos">
                         <div class="gallerie-img">
                               <img src="/dossier-voyage/assets/img/chine.jpg" alt="">
-                              <div class="show-country"><p>Chine</p></div>
-                        </div>
-                        <div class="gallerie-img">
-                              <img src="/dossier-voyage/assets/img/afrique.jpg" alt="">
-                              <div class="show-country"><p>Afrique</p></div>
-                        </div>
-                        <div class="gallerie-img">
-                              <img src="/dossier-voyage/assets/img/paris.jpg" alt="">
-                              <div class="show-country"><p>Paris</p></div>
+                              <div class="show-country"><a href="la-chine.html"><p>Chine</p></a> </div>
                         </div>
                         <div class="gallerie-img">
                               <img src="/dossier-voyage/assets/img/italie.jpg" alt="">
-                              <div class="show-country"><p>Italie</p></div>
+                              <div class="show-country"><a href="italie.html"><p>Italie</p></a></div>
                         </div>
+                        <div class="gallerie-img">
+                              <img src="/dossier-voyage/assets/img/paris.jpg" alt="">
+                              <div class="show-country"><a href="paris.html"><p>Paris</p></a></div>
+                        </div>
+                        <div class="gallerie-img">
+                              <img src="/dossier-voyage/assets/img/coree du sud.jpg" alt="">
+                              <div class="show-country"><a href="coree-du-sud.html"><p>Corée du sud</p></a></div>
+                        </div>
+                      
                   </div>
                   
             </section>
@@ -113,18 +125,27 @@
             <!-- footer -->
 
             <footer>
-                  <div>
-                  <p>&copy; 2024 Voyageons Ensemble. Tous droits réservés.</p>
-                  <ul">
-                        <p>À propos de nous</p>
-                        <p>Destinations</p>
-                        <p>Blog</p>
-                        <p>Contact</p>
-                        <p>Mentions légales</p>
+                  <div class="ongles">
+                  <ul>
+                        <li><p>À propos de nous</p></li>
+                        <li><p>Destinations</p></li>
+                        <li><p>Blog</p></li>
+                        <li><p>Contact</p></li>
+                        <li><p>Mentions légales</p></li>
                   </ul>
                   
+                        <ul>
+                              <li>
+                                    <p>
+
+                                    </p>
+                              </li>
+                        </ul>
+                        
+                        <p>&copy; 2024 Voyageons Ensemble. Tous droits réservés.</p>
                   </div>
             </footer>
+            
             
 </body>
 </html>
